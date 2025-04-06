@@ -19,7 +19,7 @@ function updateClock() {
     seconds = seconds < 10 ? "0" + seconds : seconds;
    
     let currentTime = hours + ":" + minutes + ":" + seconds;
-    clock.innerText = currentTime;
+    clock.innerText = currentTime + " " + period;
 }
 
 setInterval(updateClock, 1000);
